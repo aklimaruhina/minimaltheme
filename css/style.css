@@ -70,7 +70,7 @@ footer p{color: #000;padding-right: 13px;}
 footer {background-color: #efefef}
 .footer{display: flex;
     justify-content: space-between;
-    align-items: center;padding:50px;
+    align-items: center;padding:50px;flex-wrap:wrap;
 }
 .link a{
     font-size: 14px;color: #000;margin-right: 10px;
@@ -79,7 +79,7 @@ ul li{list-style-type: none;display: inline-block;padding-right: 13px;}
 .footer .box{display: flex;}
 .footer .box a{
     color: #626262;
-    font-style: 14px;
+    font-size: 14px;
 }
 input{
     width: 40%;
@@ -89,4 +89,71 @@ input{
     position: relative;
 }
 .form-container .sendbtn{margin-left: -37px;}
-.btn{color: red;font-size: 13px;}
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+@media (max-width:768px){
+  .menu{display: inline-block;}
+  .navbar {
+    height: 100%; /* 100% Full-height */
+/*     display:none; */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 10%; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.navbar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.navbar a:hover{
+  color: #f1f1f1;
+}
+  .banner_content{padding:0px;}
+  .container{width:100%;}
+  .gallery-container, .blog-container{padding:0}
+  .single-box h2, .banner_content h2{margin-bottom:20px;}
+  h2{font-size:22px;}
+  .footer{padding:0}
+}
+@media screen and (max-width: 480px){
+  .banner_content h2{font-size:22px;}
+  .banner_content h3{margin-top:15px;}
+  .single-box{width:100%;}
+  input{width:70%;}
+  .link{margin-bottom:10px;}
+}
