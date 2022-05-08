@@ -88,6 +88,7 @@ p{font-size: 14px;color: #626262;}
     margin: 0 auto;
     overflow: hidden;
 }
+ textarea{outline:none;}
 input{
     width: 100%;
     padding: 15px;
