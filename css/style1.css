@@ -24,7 +24,7 @@ html::-webkit-scrollbar-thumb{
     background-color: #626262;
 }
 section, header{
-    padding: 5rem 10%;
+    padding: 5rem 5%;
 }
 section h1{
     font-size: 3em;
@@ -59,6 +59,7 @@ header{
 .navbar a:hover{font-weight: bold;}
 .navbar a:last-child{padding-right: 0}
 .banner_img{padding-bottom: 60px;}
+.banner_img img{width: 100%}
 .banner_content{padding: 50px;}
 h2{font-size: 30px; color: #626262;}
 h4, h3, .top_title{font-family: 'Ubuntu', sans-serif;font-weight: lighter;text-transform: uppercase;color:#b4ad9e;font-size: 14px;}
