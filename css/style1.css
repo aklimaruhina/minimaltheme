@@ -64,7 +64,7 @@ header{
 h2{font-size: 30px; color: #626262;}
 h4, h3, .top_title{font-family: 'Ubuntu', sans-serif;font-weight: lighter;text-transform: uppercase;color:#b4ad9e;font-size: 14px;}
 .banner_content h2{font-size: 30px; color: #626262;}
-.banner_content #comment{font-family: 'Ubuntu', sans-serif;font-weight: lighter;text-transform: uppercase;color:#b4ad9e;font-size: 14px;margin-top: 10px;}
+.banner_content #comment{font-family: 'Ubuntu', sans-serif;font-weight: lighter;text-transform: uppercase;color:#b4ad9e;font-size: 14px;margin-top: 30px;}
 p{font-size: 14px;color: #626262;}
 .homepage{padding-bottom: 0}
 .gallery{padding-top: 0}
@@ -88,7 +88,7 @@ p{font-size: 14px;color: #626262;}
     margin: 0 auto;
     overflow: hidden;
 }
- textarea{outline:none;}
+ textarea{outline:none;margin-top: 2}
 input{
     width: 100%;
     padding: 15px;
